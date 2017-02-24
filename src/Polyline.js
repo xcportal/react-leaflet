@@ -1,6 +1,6 @@
 // @flow
 
-import { polyline } from 'leaflet'
+import { polyline } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import childrenType from './types/children'

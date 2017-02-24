@@ -1,6 +1,6 @@
 /* global describe, expect, it, jest */
 
-import Leaflet from 'leaflet'
+import Leaflet from 'leaflet-headless'
 import React, { Component } from 'react'
 import { renderIntoDocument } from 'react-addons-test-utils'
 

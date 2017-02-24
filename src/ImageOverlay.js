@@ -1,6 +1,6 @@
 // @flow
 
-import { imageOverlay } from 'leaflet'
+import { imageOverlay } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import boundsType from './types/bounds'

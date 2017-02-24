@@ -1,6 +1,6 @@
 // @flow
 
-import { featureGroup } from 'leaflet'
+import { featureGroup } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import childrenType from './types/children'

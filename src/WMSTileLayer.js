@@ -1,6 +1,6 @@
 // @flow
 
-import { tileLayer } from 'leaflet'
+import { tileLayer } from 'leaflet-headless'
 import { isEqual } from 'lodash'
 import { PropTypes } from 'react'
 

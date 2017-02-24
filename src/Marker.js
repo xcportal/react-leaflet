@@ -1,6 +1,6 @@
 // @flow
 
-import { Icon, marker } from 'leaflet'
+import { Icon, marker } from 'leaflet-headless'
 import React, { PropTypes } from 'react'
 
 import childrenType from './types/children'

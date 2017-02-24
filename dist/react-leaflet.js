@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("leaflet"), require("react-dom"));
+		module.exports = factory(require("react"), require("leaflet-headless"), require("react-dom"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react", "leaflet", "react-dom"], factory);
+		define(["react", "leaflet-headless", "react-dom"], factory);
 	else if(typeof exports === 'object')
-		exports["ReactLeaflet"] = factory(require("react"), require("leaflet"), require("react-dom"));
+		exports["ReactLeaflet"] = factory(require("react"), require("leaflet-headless"), require("react-dom"));
 	else
 		root["ReactLeaflet"] = factory(root["React"], root["L"], root["ReactDOM"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_3__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_151__) {
@@ -251,7 +251,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react = __webpack_require__(3);
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _latlngList = __webpack_require__(5);
 
@@ -259,7 +259,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react.PropTypes.oneOfType([_react.PropTypes.instanceOf(_leaflet.LatLngBounds), _latlngList2.default]);
+	exports.default = _react.PropTypes.oneOfType([_react.PropTypes.instanceOf(_leafletHeadless.LatLngBounds), _latlngList2.default]);
 
 /***/ },
 /* 3 */
@@ -362,11 +362,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
-	exports.default = _react.PropTypes.instanceOf(_leaflet.Map);
+	exports.default = _react.PropTypes.instanceOf(_leafletHeadless.Map);
 
 /***/ },
 /* 11 */
@@ -376,7 +376,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -408,7 +408,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  AttributionControl.prototype.createLeafletElement = function createLeafletElement(props) {
-	    return _leaflet.control.attribution(props);
+	    return _leafletHeadless.control.attribution(props);
 	  };
 
 	  return AttributionControl;
@@ -509,7 +509,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -551,7 +551,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        radius = props.radius,
 	        options = _objectWithoutProperties(props, ['center', 'radius']);
 
-	    return (0, _leaflet.circle)(center, radius, this.getOptions(options));
+	    return (0, _leafletHeadless.circle)(center, radius, this.getOptions(options));
 	  };
 
 	  Circle.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -4356,7 +4356,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -4397,7 +4397,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var center = props.center,
 	        options = _objectWithoutProperties(props, ['center']);
 
-	    return (0, _leaflet.circleMarker)(center, this.getOptions(options));
+	    return (0, _leafletHeadless.circleMarker)(center, this.getOptions(options));
 	  };
 
 	  CircleMarker.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -4427,7 +4427,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -4470,7 +4470,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  FeatureGroup.prototype.createLeafletElement = function createLeafletElement(props) {
-	    return (0, _leaflet.featureGroup)(this.getOptions(props));
+	    return (0, _leafletHeadless.featureGroup)(this.getOptions(props));
 	  };
 
 	  FeatureGroup.prototype.componentDidMount = function componentDidMount() {
@@ -4500,7 +4500,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _isFunction3 = _interopRequireDefault(_isFunction2);
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -4537,7 +4537,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var data = props.data,
 	        options = _objectWithoutProperties(props, ['data']);
 
-	    return (0, _leaflet.geoJSON)(data, this.getOptions(options));
+	    return (0, _leafletHeadless.geoJSON)(data, this.getOptions(options));
 	  };
 
 	  GeoJSON.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -4565,7 +4565,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -4597,7 +4597,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  GridLayer.prototype.createLeafletElement = function createLeafletElement(props) {
-	    return (0, _leaflet.gridLayer)(this.getOptions(props));
+	    return (0, _leafletHeadless.gridLayer)(this.getOptions(props));
 	  };
 
 	  GridLayer.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -4634,7 +4634,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -4682,7 +4682,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        url = props.url,
 	        options = _objectWithoutProperties(props, ['bounds', 'url']);
 
-	    return (0, _leaflet.imageOverlay)(url, bounds, this.getOptions(options));
+	    return (0, _leafletHeadless.imageOverlay)(url, bounds, this.getOptions(options));
 	  };
 
 	  ImageOverlay.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -4717,7 +4717,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _layerContainer = __webpack_require__(9);
 
@@ -4753,7 +4753,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  LayerGroup.prototype.createLeafletElement = function createLeafletElement() {
-	    return (0, _leaflet.layerGroup)(this.getOptions());
+	    return (0, _leafletHeadless.layerGroup)(this.getOptions());
 	  };
 
 	  return LayerGroup;
@@ -4772,7 +4772,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -4939,7 +4939,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _children = props.children,
 	        options = _objectWithoutProperties(props, ['children']);
 
-	    return _leaflet.control.layers(undefined, undefined, options);
+	    return _leafletHeadless.control.layers(undefined, undefined, options);
 	  };
 
 	  LayersControl.prototype.componentWillMount = function componentWillMount() {
@@ -5034,9 +5034,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _isUndefined3 = _interopRequireDefault(_isUndefined2);
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
-	var _leaflet2 = _interopRequireDefault(_leaflet);
+	var _leafletHeadless2 = _interopRequireDefault(_leafletHeadless);
 
 	var _react = __webpack_require__(3);
 
@@ -5096,7 +5096,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  Map.prototype.createLeafletElement = function createLeafletElement(props) {
-	    return _leaflet2.default.map(this.container, props);
+	    return _leafletHeadless2.default.map(this.container, props);
 	  };
 
 	  Map.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -5112,10 +5112,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    if (className !== fromProps.className) {
 	      if (fromProps.className) {
-	        _leaflet2.default.DomUtil.removeClass(this.container, fromProps.className);
+	        _leafletHeadless2.default.DomUtil.removeClass(this.container, fromProps.className);
 	      }
 	      if (className) {
-	        _leaflet2.default.DomUtil.addClass(this.container, className);
+	        _leafletHeadless2.default.DomUtil.addClass(this.container, className);
 	      }
 	    }
 
@@ -5170,8 +5170,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Map.prototype.shouldUpdateBounds = function shouldUpdateBounds(next, prev) {
 	    if (!prev) return true;
-	    next = _leaflet2.default.latLngBounds(next);
-	    prev = _leaflet2.default.latLngBounds(prev);
+	    next = _leafletHeadless2.default.latLngBounds(next);
+	    prev = _leafletHeadless2.default.latLngBounds(prev);
 	    return !next.equals(prev);
 	  };
 
@@ -5215,7 +5215,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  useFlyTo: false
 	};
 	Map.childContextTypes = {
-	  map: _react.PropTypes.instanceOf(_leaflet2.default.Map)
+	  map: _react.PropTypes.instanceOf(_leafletHeadless2.default.Map)
 	};
 	exports.default = Map;
 
@@ -5546,7 +5546,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -5595,7 +5595,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var position = props.position,
 	        options = _objectWithoutProperties(props, ['position']);
 
-	    return (0, _leaflet.marker)(position, this.getOptions(options));
+	    return (0, _leafletHeadless.marker)(position, this.getOptions(options));
 	  };
 
 	  Marker.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -5629,7 +5629,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	Marker.propTypes = {
 	  children: _children2.default,
-	  icon: _react.PropTypes.instanceOf(_leaflet.Icon),
+	  icon: _react.PropTypes.instanceOf(_leafletHeadless.Icon),
 	  opacity: _react.PropTypes.number,
 	  position: _latlng2.default.isRequired,
 	  zIndexOffset: _react.PropTypes.number
@@ -5952,7 +5952,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -5995,7 +5995,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var positions = props.positions,
 	        options = _objectWithoutProperties(props, ['positions']);
 
-	    return (0, _leaflet.polygon)(positions, this.getOptions(options));
+	    return (0, _leafletHeadless.polygon)(positions, this.getOptions(options));
 	  };
 
 	  Polygon.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -6023,7 +6023,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6064,7 +6064,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var positions = props.positions,
 	        options = _objectWithoutProperties(props, ['positions']);
 
-	    return (0, _leaflet.polyline)(positions, this.getOptions(options));
+	    return (0, _leafletHeadless.polyline)(positions, this.getOptions(options));
 	  };
 
 	  Polyline.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -6091,7 +6091,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6163,7 +6163,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _children = props.children,
 	        options = _objectWithoutProperties(props, ['children']);
 
-	    return (0, _leaflet.popup)(this.getOptions(options), this.context.popupContainer);
+	    return (0, _leafletHeadless.popup)(this.getOptions(options), this.context.popupContainer);
 	  };
 
 	  Popup.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -6251,7 +6251,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6292,7 +6292,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var bounds = props.bounds,
 	        options = _objectWithoutProperties(props, ['bounds']);
 
-	    return (0, _leaflet.rectangle)(bounds, this.getOptions(options));
+	    return (0, _leafletHeadless.rectangle)(bounds, this.getOptions(options));
 	  };
 
 	  Rectangle.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -6320,7 +6320,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6352,7 +6352,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  ScaleControl.prototype.createLeafletElement = function createLeafletElement(props) {
-	    return _leaflet.control.scale(props);
+	    return _leafletHeadless.control.scale(props);
 	  };
 
 	  return ScaleControl;
@@ -6375,7 +6375,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6412,7 +6412,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var url = props.url,
 	        options = _objectWithoutProperties(props, ['url']);
 
-	    return (0, _leaflet.tileLayer)(url, this.getOptions(options));
+	    return (0, _leafletHeadless.tileLayer)(url, this.getOptions(options));
 	  };
 
 	  TileLayer.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -6440,7 +6440,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6508,7 +6508,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _children = props.children,
 	        options = _objectWithoutProperties(props, ['children']);
 
-	    return (0, _leaflet.tooltip)(this.getOptions(options), this.context.popupContainer);
+	    return (0, _leafletHeadless.tooltip)(this.getOptions(options), this.context.popupContainer);
 	  };
 
 	  Tooltip.prototype.componentWillMount = function componentWillMount() {
@@ -6569,7 +6569,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _isEqual3 = _interopRequireDefault(_isEqual2);
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6606,7 +6606,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var url = props.url,
 	        options = _objectWithoutProperties(props, ['url']);
 
-	    return _leaflet.tileLayer.wms(url, this.getOptions(options));
+	    return _leafletHeadless.tileLayer.wms(url, this.getOptions(options));
 	  };
 
 	  WMSTileLayer.prototype.updateLeafletElement = function updateLeafletElement(fromProps, toProps) {
@@ -6647,7 +6647,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _leaflet = __webpack_require__(4);
+	var _leafletHeadless = __webpack_require__(4);
 
 	var _react = __webpack_require__(3);
 
@@ -6679,7 +6679,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  ZoomControl.prototype.createLeafletElement = function createLeafletElement(props) {
-	    return _leaflet.control.zoom(props);
+	    return _leafletHeadless.control.zoom(props);
 	  };
 
 	  return ZoomControl;

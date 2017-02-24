@@ -2,8 +2,8 @@
 
 import { assign } from 'lodash';
 
-const L = require.requireActual('leaflet');
-const LeafletMock = jest.genMockFromModule('leaflet');
+const L = require.requireActual('leaflet-headless');
+const LeafletMock = jest.genMockFromModule('leaflet-headless');
 
 class ControlMock extends LeafletMock.Control {
   constructor(options) {

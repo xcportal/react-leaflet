@@ -1,6 +1,6 @@
 // @flow
 
-import { tileLayer } from 'leaflet'
+import { tileLayer } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import childrenType from './types/children'

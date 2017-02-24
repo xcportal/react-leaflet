@@ -1,6 +1,6 @@
 // @flow
 
-import { layerGroup } from 'leaflet'
+import { layerGroup } from 'leaflet-headless'
 
 import layerContainerType from './types/layerContainer'
 

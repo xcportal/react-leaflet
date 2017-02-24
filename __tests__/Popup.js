@@ -1,7 +1,7 @@
 /* global describe, expect, it, jest */
 /* eslint-disable react/no-did-mount-set-state, react/no-did-update-set-state */
 
-import Leaflet from 'leaflet'
+import Leaflet from 'leaflet-headless'
 import React, { Component } from 'react'
 import { renderIntoDocument } from 'react-addons-test-utils'
 

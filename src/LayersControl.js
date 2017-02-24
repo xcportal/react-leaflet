@@ -1,6 +1,6 @@
 // @flow
 
-import { control } from 'leaflet'
+import { control } from 'leaflet-headless'
 import React, { cloneElement, Component, Children, PropTypes } from 'react'
 
 import childrenType from './types/children'

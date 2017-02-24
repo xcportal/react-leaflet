@@ -1,6 +1,6 @@
 // @flow
 
-import { geoJSON } from 'leaflet'
+import { geoJSON } from 'leaflet-headless'
 import { isFunction } from 'lodash'
 import { PropTypes } from 'react'
 

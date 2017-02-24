@@ -1,6 +1,6 @@
 // @flow
 
-import { tooltip as createTooltip } from 'leaflet'
+import { tooltip as createTooltip } from 'leaflet-headless'
 import { Children, PropTypes } from 'react'
 import { render, unmountComponentAtNode } from 'react-dom'
 

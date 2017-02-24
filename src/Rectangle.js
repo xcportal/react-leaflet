@@ -1,6 +1,6 @@
 // @flow
 
-import { rectangle } from 'leaflet'
+import { rectangle } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import boundsType from './types/bounds'

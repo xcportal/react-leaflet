@@ -1,6 +1,6 @@
 // @flow
 
-import { gridLayer } from 'leaflet'
+import { gridLayer } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import childrenType from './types/children'

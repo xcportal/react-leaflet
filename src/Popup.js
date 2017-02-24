@@ -1,6 +1,6 @@
 // @flow
 
-import { popup as createPopup } from 'leaflet'
+import { popup as createPopup } from 'leaflet-headless'
 import { Children, PropTypes } from 'react'
 import { render, unmountComponentAtNode } from 'react-dom'
 

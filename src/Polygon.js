@@ -1,6 +1,6 @@
 // @flow
 
-import { polygon } from 'leaflet'
+import { polygon } from 'leaflet-headless'
 import { PropTypes } from 'react'
 
 import childrenType from './types/children'

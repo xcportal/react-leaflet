@@ -9,7 +9,7 @@ Please make sure you understand all the [core concepts](How%20it%20works.md#core
 React-Leaflet allows to convert this [sample code from Leaflet documentation](http://leafletjs.com/):
 
 ```js
-import L from 'leaflet';
+import L from 'leaflet-headless';
 
 const position = [51.505, -0.09];
 const map = L.map('map').setView(position, 13);
